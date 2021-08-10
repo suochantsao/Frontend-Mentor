@@ -17,10 +17,13 @@ header {
     h2 {
       width: 100%;
       text-align: center;
-      margin: 10% 0 35% 0;
+      margin-top: 8%;
       font-family: "Fraunces", serif;
       font-size: 3rem;
-      letter-spacing: 1rem;
+      letter-spacing: 0.5rem;
+    }
+    .arrow-down {
+      margin: 7% auto 20% auto;
     }
     .navbar {
       display: flex;
@@ -47,23 +50,25 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+
   ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     li {
-      max-width: 1440px;
       display: flex;
       justify-content: center;
       div {
         width: 50%;
-        padding: 15% 12%;
+        padding: 10% 12%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         h3 {
           margin-bottom: 5%;
-          padding-right: 5%;
+          padding-right: 12%;
           font-size: 2rem;
           font-family: "Fraunces", serif;
           line-height: 2.5rem;
@@ -78,6 +83,34 @@ header {
           font-family: "Fraunces", serif;
           font-size: 12px;
         }
+      }
+      img {
+        width: 50%;
+      }
+    }
+    .graphic-block {
+      color: $graphic-color;
+      background-image: url(../img/desktop/image-graphic-design.jpg);
+    }
+    .photograph-block {
+      color: $photograph-color;
+      background-image: url(../img/desktop/image-photography.jpg);
+    }
+    .bg-setting {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      h4 {
+        margin: 55% 0 5% 0;
+        font-size: 1.5rem;
+        font-family: "Fraunces", serif;
+      }
+      p {
+        padding: 0 25%;
+        margin-bottom: 8%;
+        line-height: 1.5rem;
+        font-family: "Barlow", sans-serif;
       }
     }
   }
