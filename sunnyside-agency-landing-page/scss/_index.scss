@@ -115,3 +115,92 @@ header {
     }
   }
 }
+
+// Client testmonials section
+.client-section {
+  max-width: 1440px;
+  margin: 10% auto;
+  padding: 0 5%;
+  h6 {
+    text-align: center;
+    color: $client-color;
+    letter-spacing: 0.2rem;
+    font-family: "Fraunces", serif;
+  }
+  ul {
+    display: flex;
+    text-align: center;
+    li {
+      width: 33%;
+      margin-top: 8%;
+      img {
+        width: 15%;
+        border-radius: 300px;
+      }
+      p {
+        margin: 10% auto;
+        padding: 0 14%;
+        color: grey;
+        line-height: 1.5rem;
+        font-family: "Barlow", sans-serif;
+      }
+      span {
+        display: block;
+      }
+      .name-style {
+        font-family: "Fraunces", serif;
+      }
+      .pos-style {
+        margin-top: 4%;
+        color: $client-color;
+        font-size: 0.8rem;
+        font-family: "Barlow", sans-serif;
+      }
+    }
+  }
+}
+
+// Picture section
+.pic-section {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  img {
+    width: 25%;
+  }
+}
+
+// Footer
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5%;
+  background-color: $footer-color;
+  .filter-green {
+    filter: invert(26%) sepia(53%) saturate(399%) hue-rotate(116deg)
+      brightness(35%) contrast(92%);
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      margin: 3% 0;
+      line-height: 1.5rem;
+      font-family: "Barlow", sans-serif;
+      cursor: pointer;
+    }
+  }
+  .str-link {
+    li {
+      margin: 3% 2% 2.5% 2%;
+      color: $lightgreen-color;
+    }
+  }
+  .img-link {
+    li {
+      padding: 0 1%;
+      margin-bottom: 4%;
+    }
+  }
+}
