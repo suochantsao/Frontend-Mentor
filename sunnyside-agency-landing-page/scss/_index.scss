@@ -133,6 +133,11 @@ header {
       }
     }
   }
+  @include pad-width {
+    .mobile-style {
+      display: none;
+    }
+  }
 }
 
 // Client testmonials section
