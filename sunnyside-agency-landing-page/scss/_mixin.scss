@@ -3,3 +3,12 @@
   align-items: center;
   justify-content: space-between;
 }
+
+// Media Queries
+$ipad-media: 767px;
+
+@mixin pad-width() {
+  @media all and (max-width: $ipad-media) {
+    @content;
+  }
+}

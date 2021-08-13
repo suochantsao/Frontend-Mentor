@@ -25,6 +25,9 @@ header {
     .arrow-down {
       margin: 7% auto 20% auto;
     }
+    .mobile-hamburger {
+      display: none;
+    }
     .navbar {
       display: flex;
       width: 50%;
@@ -40,6 +43,22 @@ header {
         background-color: white;
         font-family: "Fraunces", serif;
         border-radius: 30px;
+      }
+    }
+  }
+  @include pad-width {
+    background-image: url(../img/mobile/image-header.jpg);
+    div {
+      padding: 5% 5% 0 5%;
+      h2 {
+        margin: 23% 0 5% 0;
+      }
+      .mobile-hamburger {
+        display: block;
+        cursor: pointer;
+      }
+      .navbar {
+        display: none;
       }
     }
   }
@@ -158,15 +177,45 @@ header {
       }
     }
   }
+  @include pad-width {
+    h6 {
+      margin: 18% 0 4% 0;
+    }
+    ul {
+      flex-direction: column;
+      li {
+        width: 100%;
+        margin: 12% 0;
+      }
+    }
+  }
 }
 
 // Picture section
 .pic-section {
-  display: flex;
-  max-width: 1440px;
-  margin: 0 auto;
-  img {
-    width: 25%;
+  .desktop-style {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    img {
+      width: 25%;
+    }
+  }
+  .mobile-style {
+    display: none;
+  }
+  @include pad-width {
+    .desktop-style {
+      display: none;
+    }
+    .mobile-style {
+      display: block;
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        width: 50%;
+      }
+    }
   }
 }
 
@@ -201,6 +250,18 @@ footer {
     li {
       padding: 0 1%;
       margin-bottom: 4%;
+    }
+  }
+  @include pad-width {
+    .filter-green {
+      margin: 5% 0 3% 0;
+    }
+    .img-link {
+      margin-top: 8%;
+      padding-bottom: 8%;
+      li {
+        padding: 0 2%;
+      }
     }
   }
 }
