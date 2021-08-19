@@ -132,9 +132,15 @@ header {
         font-family: "Barlow", sans-serif;
       }
     }
+    .mobile-section {
+      display: none;
+    }
   }
   @include pad-width {
     .mobile-style {
+      display: none;
+    }
+    .desktop-section {
       display: none;
     }
   }
