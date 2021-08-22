@@ -143,9 +143,12 @@ header {
     .desktop-section {
       display: none;
     }
-    .mobile-selection {
+    .mobile-section {
       display: block;
       width: 100%;
+      img {
+        width: 100%;
+      }
     }
   }
 }
