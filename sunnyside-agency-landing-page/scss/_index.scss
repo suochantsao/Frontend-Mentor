@@ -146,6 +146,10 @@ header {
     .mobile-section {
       display: block;
       width: 100%;
+      li {
+        display: flex;
+        flex-direction: column;
+      }
       img {
         width: 100%;
       }
