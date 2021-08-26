@@ -146,12 +146,29 @@ header {
     .mobile-section {
       display: block;
       width: 100%;
+      text-align: center;
       li {
         display: flex;
         flex-direction: column;
       }
       img {
         width: 100%;
+      }
+      h3 {
+        font-size: 2rem;
+        font-family: "Fraunces", serif;
+        line-height: 2.5rem;
+      }
+      p {
+        color: grey;
+        line-height: 1.5rem;
+        font-family: "Barlow", sans-serif;
+      }
+      .mobile-bg {
+        h4 {
+          font-size: 1.5rem;
+          font-family: "Fraunces", serif;
+        }
       }
     }
   }
