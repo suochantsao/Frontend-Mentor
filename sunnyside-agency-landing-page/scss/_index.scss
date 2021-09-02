@@ -45,6 +45,12 @@ header {
         border-radius: 30px;
       }
     }
+    .mobile-nav{
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      display: none;
+    }
   }
   @include pad-width {
     background-image: url(../img/mobile/image-header.jpg);
@@ -53,12 +59,17 @@ header {
       h2 {
         margin: 23% 0 5% 0;
       }
-      .mobile-hamburger {
-        display: block;
-        cursor: pointer;
+      a{
+        display: inline;
       }
       .navbar {
         display: none;
+      }
+      .mobile-nav{
+        display: inline-flex;
+        cursor: pointer;
+      justify-content: flex-end;
+        width: 50%;
       }
     }
   }
