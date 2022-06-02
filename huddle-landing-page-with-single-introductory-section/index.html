@@ -11,34 +11,104 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    Build The Community Your Fans Will Love Huddle re-imagines the way we build
-    communities. You have a voice, but so does your audience. Create connections
-    with your users as you engage in genuine discussion. Register
+    <div class="bg-violet text-white bg-main-mobile bg-no-repeat px-9 py-7">
+      <h1 class="mb-14">
+        <img class="w-2/5" src="./images/logo.svg" alt="" />
+      </h1>
+      <ul class="main text-center">
+        <li>
+          <img src="./images/illustration-mockups.svg" alt="" />
+        </li>
+        <li>
+          <h2
+            class="text-white font-poppins font-semibold text-2xl tracking-wider leading-10 mt-12"
+          >
+            Build The Community<br />
+            Your Fans Will Love
+          </h2>
+        </li>
+        <li>
+          <p class="text-md font-openSans my-6">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <span
+            class="block bg-white text-violet py-3 mx-10 rounded-full shadow-lg cursor-pointer hover:bg-softMagenta hover:text-white"
+            >Register</span
+          >
+        </li>
+      </ul>
+      <ul
+        class="w-3/5 icon-block text-white flex justify-evenly m-auto mt-14 cursor-pointer"
+      >
+        <li>
+          <i
+            class="fa-brands fa-facebook-f border py-2 px-[10px] rounded-full hover:text-deepMagenta hover:border-deepMagenta"
+          ></i>
+        </li>
+        <li>
+          <i
+            class="fa-brands fa-twitter border p-2 rounded-full hover:text-deepMagenta hover:border-deepMagenta"
+          ></i>
+        </li>
+        <li>
+          <i
+            class="fa-brands fa-instagram border p-2 rounded-full hover:text-deepMagenta hover:border-deepMagenta"
+          ></i>
+        </li>
+      </ul>
 
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Angela Tsao</a>.
-      </p>
-    </footer>
+      <footer>
+        <p class="hidden">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Angela Tsao</a>.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          violet: "hsl(257, 40%, 49%)",
+          softMagenta: "hsl(300, 69%, 71%)",
+          deepMagenta: "hsl(300, 96%, 50%)",
+        },
+        backgroundImage: {
+          "main-desktop": "url('images/bg-desktop.svg')",
+          "main-mobile": "url('images/bg-mobile.svg')",
+        },
+        fontFamily: {
+          poppins: ["Poppins"],
+          openSans: ["Open Sans"],
+        },
+      },
+    },
+  };
+</script>
